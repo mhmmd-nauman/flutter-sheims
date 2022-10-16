@@ -9,7 +9,7 @@ class MyAppExp3 extends StatelessWidget {
     return MaterialApp(
       title: 'IUB Portal',
       home: Scaffold(
-        appBar: AppBar(title: const Text('My IUB - Example'), actions: []),
+        appBar: AppBar(title: const Text('My IUB - Example 3'), actions: []),
         body: myDashBoard(),
       ),
     );
