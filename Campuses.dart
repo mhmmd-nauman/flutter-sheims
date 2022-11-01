@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 void main() {
   runApp(
     MaterialApp(
-      title: "My IUB",
+      title: "My IUB Campuses",
       home: const HomePage(),
       debugShowCheckedModeBanner: false,
       theme: ThemeData(primarySwatch: Colors.blue),
