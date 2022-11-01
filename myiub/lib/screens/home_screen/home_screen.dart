@@ -5,7 +5,6 @@ import 'package:myiub/constants.dart';
 import 'package:myiub/screens/assignment_screen/assignment_screen.dart';
 import 'package:myiub/screens/datesheet_screen/datesheet_screen.dart';
 import 'package:myiub/screens/fee_screen/fee_screen.dart';
-import 'package:myiub/screens/my_profile/my_profile.dart';
 import 'package:myiub/screens/time_table/table_screen.dart';
 import 'package:sizer/sizer.dart';
 import 'widgets/student_data.dart';
@@ -74,7 +73,7 @@ class HomeScreen extends StatelessWidget {
                         Navigator.pushNamed(context, FeeScreen.routeName);
                       },
                       title: 'Fees Due',
-                      value: '600\$',
+                      value: 'Rs 40,000',
                     ),
                   ],
                 )

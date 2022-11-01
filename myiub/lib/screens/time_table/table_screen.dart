@@ -85,7 +85,7 @@ class TableScreen extends StatelessWidget {
                         Navigator.pushNamed(context, FeeScreen.routeName);
                       },
                       title: 'Fees Due',
-                      value: '600\$',
+                      value: 'Rs 40,000',
                     ),
                   ],
                 )
