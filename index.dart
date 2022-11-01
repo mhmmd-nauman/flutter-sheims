@@ -4,7 +4,7 @@ import 'courses_offered.dart';
 void main() {
   runApp(
     MaterialApp(
-      title: "My IUB",
+      title: "My IUB Course Offerd",
       home: const HomePage(),
       debugShowCheckedModeBanner: false,
       theme: ThemeData(primarySwatch: Colors.blue),
