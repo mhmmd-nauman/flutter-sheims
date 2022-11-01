@@ -1,0 +1,1019 @@
+import 'package:flutter/material.dart';
+
+void main() {
+  runApp(const MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  const MyApp({Key? key}) : super(key: key);
+
+  // This widget is the root of your application.
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Flutter Demo',
+      home: const Iub(),
+    );
+  }
+}
+
+class Iub extends StatelessWidget {
+  const Iub({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: Container(
+        height: MediaQuery.of(context).size.height,
+        width: MediaQuery.of(context).size.width,
+        decoration:
+            BoxDecoration(border: Border.all(color: Color(0xff14225b), width: 3)),
+        child: SingleChildScrollView(
+          child: Column(
+            //  mainAxisAlignment: MainAxisAlignment,
+            children: [
+              Padding(
+                padding: const EdgeInsets.only(left: 10, right: 20),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Text(
+                      'IUB Time Table',
+                      style: TextStyle(
+                          color: Color(0xff14225b),
+                          fontWeight: FontWeight.bold,
+                          fontSize: 20),
+                    ),
+                    Text(
+                      'Class:BWP-BSSENG-6TH-1M',
+                      style: TextStyle(
+                          color: Colors.black,
+                          fontWeight: FontWeight.bold,
+                          fontSize: 15),
+                    ),
+                  ],
+                ),
+              ),
+              Padding(
+                padding: const EdgeInsets.only(left: 740),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.end,
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.only(left: 0),
+                      child: Text(
+                        'Total Credits Hours(Academic Session):18',
+                        style: TextStyle(color: Colors.red, fontSize: 15),
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(left: 0),
+                      child: Text(
+                        'Total Credits Hours(Timetable):18',
+                        style: TextStyle(color: Colors.red, fontSize: 15),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+              Column(
+                mainAxisAlignment: MainAxisAlignment.start,
+                children: [
+                  Row(
+                    children: [
+                      Container(
+                          height: 40,
+                          width: 100,
+                          decoration: BoxDecoration(
+                              color: Color(0xff0b184f),
+                              border:
+                                  Border.all(color: Colors.white, width: 1)),
+                          child: Text(
+                            'Day\nTime',
+                            style: TextStyle(
+                                color: Colors.white,
+                                fontWeight: FontWeight.bold),
+                          )),
+                      Container(
+                          height: 40,
+                          width: 130,
+                          decoration: BoxDecoration(
+                              color: Color(0xff0b184f),
+                              border:
+                                  Border.all(color: Colors.white, width: 1)),
+                          //color: Color(0xff123adc),
+                          child: Center(
+                              child: Text(
+                            'Monday',
+                            style: TextStyle(
+                                color: Colors.white,
+                                fontWeight: FontWeight.bold),
+                          ))),
+                      Container(
+                          height: 40,
+                          width: 130,
+                          decoration: BoxDecoration(
+                              color: Color(0xff0b184f),
+                              border:
+                                  Border.all(color: Colors.white, width: 1)),
+                          //color: Color(0xff123adc),
+                          child: Center(
+                              child: Text(
+                            'Tuesday',
+                            style: TextStyle(
+                                color: Colors.white,
+                                fontWeight: FontWeight.bold),
+                          ))),
+                      Container(
+                          height: 40,
+                          width: 130,
+                          decoration: BoxDecoration(
+                              color: Color(0xff0b184f),
+                              border:
+                                  Border.all(color: Colors.white, width: 1)),
+                          //color: Color(0xff123adc),
+                          child: Center(
+                              child: Text(
+                            'Wednesday',
+                            style: TextStyle(
+                                color: Colors.white,
+                                fontWeight: FontWeight.bold),
+                          ))),
+                      Container(
+                          height: 40,
+                          width: 130,
+                          decoration: BoxDecoration(
+                              color: Color(0xff0b184f),
+                              border:
+                                  Border.all(color: Colors.white, width: 1)),
+                          //color: Color(0xff123adc),
+                          child: Center(
+                              child: Text(
+                            'Thursday',
+                            style: TextStyle(
+                                color: Colors.white,
+                                fontWeight: FontWeight.bold),
+                          ))),
+                      Container(
+                          height: 40,
+                          width: 130,
+                          decoration: BoxDecoration(
+                              color: Color(0xff0b184f),
+                              border:
+                                  Border.all(color: Colors.white, width: 1)),
+                          //color: Color(0xff123adc),
+                          child: Center(
+                              child: Text(
+                            'Friday',
+                            style: TextStyle(
+                                color: Colors.white,
+                                fontWeight: FontWeight.bold),
+                          ))),
+                      Container(
+                          height: 40,
+                          width: 130,
+                          decoration: BoxDecoration(
+                              color: Color(0xff0b184f),
+                              border:
+                                  Border.all(color: Colors.white, width: 1)),
+                          //color: Color(0xff123adc),
+                          child: Center(
+                              child: Text(
+                            'Saturday',
+                            style: TextStyle(
+                                color: Colors.white,
+                                fontWeight: FontWeight.bold),
+                          ))),
+                      Container(
+                          height: 40,
+                          width: 130,
+                          decoration: BoxDecoration(
+                              color: Color(0xff0b184f),
+                              border:
+                                  Border.all(color: Colors.white, width: 1)),
+                          //color: Color(0xff123adc),
+                          child: Center(
+                              child: Text(
+                            'Sunday',
+                            style: TextStyle(
+                                color: Colors.white,
+                                fontWeight: FontWeight.bold),
+                          ))),
+                    ],
+                  ),
+                ],
+              ),
+
+              Row(
+                children: [
+                  Container(
+                      height: 40,
+                      width: 100,
+                      decoration: BoxDecoration(
+                        color: Color(0xff377a0b),
+                      ),
+                      //color: Color(0xff66ef0a),
+                      child: Center(
+                        child: Text(
+                          '08:00',
+                          style: TextStyle(
+                              color: Colors.white, fontWeight: FontWeight.bold),
+                        ),
+                      )),
+                  Container(
+                      height: 40,
+                      width: 130,
+                      decoration: BoxDecoration(
+                          border: Border.all(color: Colors.black12)),
+                      //color: Color(0xff123adc),
+                      child: Center(
+                          child: Text(
+                        '--',
+                        style: TextStyle(
+                            color: Colors.black, fontWeight: FontWeight.bold),
+                      ))),
+                  Container(
+                      height: 40,
+                      width: 130,
+                      decoration: BoxDecoration(
+                          border: Border.all(color: Colors.black12)),
+                      //color: Color(0xff123adc),
+                      child: Center(
+                          child: Text(
+                        '--',
+                        style: TextStyle(
+                            color: Colors.black, fontWeight: FontWeight.bold),
+                      ))),
+                  Container(
+                      height: 40,
+                      width: 130,
+                      decoration: BoxDecoration(
+                          border: Border.all(color: Colors.black12)),
+                      //color: Color(0xff123adc),
+                      child: Center(
+                          child: Text(
+                        '--',
+                        style: TextStyle(
+                            color: Colors.black, fontWeight: FontWeight.bold),
+                      ))),
+                  Container(
+                      height: 40,
+                      width: 130,
+                      decoration: BoxDecoration(
+                          border: Border.all(color: Colors.black12)),
+                      //color: Color(0xff123adc),
+                      child: Center(
+                          child: Text(
+                        '--',
+                        style: TextStyle(
+                            color: Colors.black, fontWeight: FontWeight.bold),
+                      ))),
+                  Container(
+                      height: 40,
+                      width: 130,
+                      decoration: BoxDecoration(
+                          border: Border.all(color: Colors.black12)),
+                      //color: Color(0xff123adc),
+                      child: Center(
+                          child: Text(
+                        '--',
+                        style: TextStyle(
+                            color: Colors.black, fontWeight: FontWeight.bold),
+                      ))),
+                  Container(
+                      height: 40,
+                      width: 130,
+                      decoration: BoxDecoration(
+                          border: Border.all(color: Colors.black12)),
+                      //color: Color(0xff123adc),
+                      child: Center(
+                          child: Text(
+                        '--',
+                        style: TextStyle(
+                            color: Colors.black, fontWeight: FontWeight.bold),
+                      ))),
+                  Container(
+                      height: 40,
+                      width: 130,
+                      decoration: BoxDecoration(
+                          border: Border.all(color: Colors.black12)),
+                      //color: Color(0xff123adc),
+                      child: Center(
+                          child: Text(
+                        '--',
+                        style: TextStyle(
+                            color: Colors.black, fontWeight: FontWeight.bold),
+                      ))),
+                ],
+              ),
+
+              Row(
+                children: [
+                  Container(
+                      height: 40,
+                      width: 100,
+                      decoration: BoxDecoration(color: Color(0xff377a0b)),
+                      child: Text(
+                        '',
+                        style: TextStyle(
+                            color: Colors.white, fontWeight: FontWeight.bold),
+                      )),
+                  Container(
+                      height: 40,
+                      width: 130,
+                      decoration: BoxDecoration(
+                          border: Border.all(color: Colors.black12)),
+                      //color: Color(0xff123adc),
+                      child: Center(
+                          child: Text(
+                        '--',
+                        style: TextStyle(
+                            color: Colors.black, fontWeight: FontWeight.bold),
+                      ))),
+                  Container(
+                      height: 40,
+                      width: 130,
+                      decoration: BoxDecoration(
+                          border: Border.all(color: Colors.black12)),
+                      //color: Color(0xff123adc),
+                      child: Center(
+                          child: Text(
+                        '--',
+                        style: TextStyle(
+                            color: Colors.black, fontWeight: FontWeight.bold),
+                      ))),
+                  Container(
+                      height: 40,
+                      width: 130,
+                      decoration: BoxDecoration(
+                          border: Border.all(color: Colors.black12)),
+                      //color: Color(0xff123adc),
+                      child: Center(
+                          child: Text(
+                        '--',
+                        style: TextStyle(
+                            color: Colors.black, fontWeight: FontWeight.bold),
+                      ))),
+                  Container(
+                      height: 40,
+                      width: 130,
+                      decoration: BoxDecoration(
+                          border: Border.all(color: Colors.black12)),
+                      //color: Color(0xff123adc),
+                      child: Center(
+                          child: Text(
+                        '--',
+                        style: TextStyle(
+                            color: Colors.black, fontWeight: FontWeight.bold),
+                      ))),
+                  Container(
+                      height: 40,
+                      width: 130,
+                      decoration: BoxDecoration(
+                          border: Border.all(color: Colors.black12)),
+                      //color: Color(0xff123adc),
+                      child: Center(
+                          child: Text(
+                        '--',
+                        style: TextStyle(
+                            color: Colors.black, fontWeight: FontWeight.bold),
+                      ))),
+                  Container(
+                      height: 40,
+                      width: 130,
+                      decoration: BoxDecoration(
+                          border: Border.all(color: Colors.black12)),
+                      //color: Color(0xff123adc),
+                      child: Center(
+                          child: Text(
+                        '--',
+                        style: TextStyle(
+                            color: Colors.black, fontWeight: FontWeight.bold),
+                      ))),
+                  Container(
+                      height: 40,
+                      width: 130,
+                      decoration: BoxDecoration(
+                          border: Border.all(color: Colors.black12)
+                      ),
+                      //color: Color(0xff123adc),
+                      child: Center(
+                          child: Text(
+                        '--',
+                        style: TextStyle(
+                            color: Colors.black, fontWeight: FontWeight.bold),
+                      ))),
+                ],
+              ),
+               SizedBox(height: 1,),
+
+              Row(
+                children: [
+                  Container(
+                      height: 40,
+                      width: 100,
+                      decoration: BoxDecoration(
+                        color: Color(0xff377a0b),
+                      ),
+                      //color: Color(0xff66ef0a),
+                      child: Center(
+                        child: Text(
+                          '08:00',
+                          style: TextStyle(
+                              color: Colors.white, fontWeight: FontWeight.bold),
+                        ),
+                      )),
+                  Container(
+                      height: 40,
+                      width: 130,
+                      decoration: BoxDecoration(
+                          border: Border.all(color: Colors.black12)),
+                      //color: Color(0xff123adc),
+                      child: Center(
+                          child: Text(
+                        '--',
+                        style: TextStyle(
+                            color: Colors.black, fontWeight: FontWeight.bold),
+                      ))),
+                  Container(
+                      height: 40,
+                      width: 130,
+                      decoration: BoxDecoration(
+                          border: Border.all(color: Colors.black12)),
+                      //color: Color(0xff123adc),
+                      child: Center(
+                          child: Text(
+                        '--',
+                        style: TextStyle(
+                            color: Colors.black, fontWeight: FontWeight.bold),
+                      ))),
+                  Container(
+                      height: 40,
+                      width: 130,
+                      decoration: BoxDecoration(
+                          border: Border.all(color: Colors.black12)),
+                      //color: Color(0xff123adc),
+                      child: Center(
+                          child: Text(
+                        '--',
+                        style: TextStyle(
+                            color: Colors.black, fontWeight: FontWeight.bold),
+                      ))),
+                  Container(
+                      height: 40,
+                      width: 130,
+                      decoration: BoxDecoration(
+                          border: Border.all(color: Colors.black12)),
+                      //color: Color(0xff123adc),
+                      child: Center(
+                          child: Text(
+                        '--',
+                        style: TextStyle(
+                            color: Colors.black, fontWeight: FontWeight.bold),
+                      ))),
+                  Container(
+                      height: 40,
+                      width: 130,
+                      decoration: BoxDecoration(
+                          border: Border.all(color: Colors.black12)),
+                      //color: Color(0xff123adc),
+                      child: Center(
+                          child: Text(
+                        '--',
+                        style: TextStyle(
+                            color: Colors.black, fontWeight: FontWeight.bold),
+                      ))),
+                  Container(
+                      height: 40,
+                      width: 130,
+                      decoration: BoxDecoration(
+                          border: Border.all(color: Colors.black12)),
+                      //color: Color(0xff123adc),
+                      child: Center(
+                          child: Text(
+                        '--',
+                        style: TextStyle(
+                            color: Colors.black, fontWeight: FontWeight.bold),
+                      ))),
+                  Container(
+                      height: 40,
+                      width: 130,
+                      decoration: BoxDecoration(
+                          border: Border.all(color: Colors.black12)
+                      ),
+                      //color: Color(0xff123adc),
+                      child: Center(
+                          child: Text(
+                        '--',
+                        style: TextStyle(
+                            color: Colors.black, fontWeight: FontWeight.bold),
+                      ))),
+                ],
+              ),
+
+              Row(
+                children: [
+                  Container(
+                      height: 40,
+                      width: 100,
+                      decoration: BoxDecoration(color: Color(0xff377a0b)),
+                      child: Text(
+                        '',
+                        style: TextStyle(
+                            color: Colors.white, fontWeight: FontWeight.bold),
+                      )),
+                  Container(
+                      height: 40,
+                      width: 130,
+                      decoration: BoxDecoration(
+                          border: Border.all(color: Colors.black12)),
+                      //color: Color(0xff123adc),
+                      child: Center(
+                          child: Text(
+                        '--',
+                        style: TextStyle(
+                            color: Colors.black, fontWeight: FontWeight.bold),
+                      ))),
+                  Container(
+                      height: 40,
+                      width: 130,
+                      decoration: BoxDecoration(
+                          border: Border.all(color: Colors.black12)),
+                      //color: Color(0xff123adc),
+                      child: Center(
+                          child: Text(
+                        '--',
+                        style: TextStyle(
+                            color: Colors.black, fontWeight: FontWeight.bold),
+                      ))),
+                  Container(
+                      height: 40,
+                      width: 130,
+                      decoration: BoxDecoration(
+                          border: Border.all(color: Colors.black12)),
+                      //color: Color(0xff123adc),
+                      child: Center(
+                          child: Text(
+                        '--',
+                        style: TextStyle(
+                            color: Colors.black, fontWeight: FontWeight.bold),
+                      ))),
+                  Container(
+                      height: 40,
+                      width: 130,
+                      decoration: BoxDecoration(
+                          border: Border.all(color: Colors.black12)),
+                      //color: Color(0xff123adc),
+                      child: Center(
+                          child: Text(
+                        '--',
+                        style: TextStyle(
+                            color: Colors.black, fontWeight: FontWeight.bold),
+                      ))),
+                  Container(
+                      height: 40,
+                      width: 130,
+                      decoration: BoxDecoration(
+                          border: Border.all(color: Colors.black12)),
+                      //color: Color(0xff123adc),
+                      child: Center(
+                          child: Text(
+                        '--',
+                        style: TextStyle(
+                            color: Colors.black, fontWeight: FontWeight.bold),
+                      ))),
+                  Container(
+                      height: 40,
+                      width: 130,
+                      decoration: BoxDecoration(
+                          border: Border.all(color: Colors.black12)),
+                      //color: Color(0xff123adc),
+                      child: Center(
+                          child: Text(
+                        '--',
+                        style: TextStyle(
+                            color: Colors.black, fontWeight: FontWeight.bold),
+                      ))),
+                  Container(
+                      height: 40,
+                      width: 130,
+                      decoration: BoxDecoration(color: Color(0xffd2eec2)),
+                      //color: Color(0xff123adc),
+                      child: Center(
+                          child: Text(
+                        '',
+                        style: TextStyle(
+                            color: Colors.black, fontWeight: FontWeight.bold),
+                      ))),
+                ],
+              ),
+               SizedBox(height: 1,),
+
+              Row(
+                children: [
+                  Container(
+                      height: 40,
+                      width: 100,
+                      decoration: BoxDecoration(
+                        color: Color(0xff377a0b),
+                      ),
+                      //color: Color(0xff66ef0a),
+                      child: Center(
+                        child: Text(
+                          '08:00',
+                          style: TextStyle(
+                              color: Colors.white, fontWeight: FontWeight.bold),
+                        ),
+                      )),
+                  Container(
+                      height: 40,
+                      width: 130,
+                      decoration: BoxDecoration(
+                          border: Border.all(color: Colors.black12)),
+                      //color: Color(0xff123adc),
+                      child: Center(
+                          child: Text(
+                        '--',
+                        style: TextStyle(
+                            color: Colors.black, fontWeight: FontWeight.bold),
+                      ))),
+                  Container(
+                      height: 40,
+                      width: 130,
+                      decoration: BoxDecoration(
+                          border: Border.all(color: Colors.black12)),
+                      //color: Color(0xff123adc),
+                      child: Center(
+                          child: Text(
+                        '--',
+                        style: TextStyle(
+                            color: Colors.black, fontWeight: FontWeight.bold),
+                      ))),
+                  Container(
+                      height: 40,
+                      width: 130,
+                      decoration: BoxDecoration(
+                          border: Border.all(color: Colors.black12)),
+                      //color: Color(0xff123adc),
+                      child: Center(
+                          child: Text(
+                        '--',
+                        style: TextStyle(
+                            color: Colors.black, fontWeight: FontWeight.bold),
+                      ))),
+                  Container(
+                      height: 40,
+                      width: 130,
+                      decoration: BoxDecoration(
+                          border: Border.all(color: Colors.black12)),
+                      //color: Color(0xff123adc),
+                      child: Center(
+                          child: Text(
+                        '--',
+                        style: TextStyle(
+                            color: Colors.black, fontWeight: FontWeight.bold),
+                      ))),
+                  Container(
+                      height: 40,
+                      width: 130,
+                      decoration: BoxDecoration(
+                          border: Border.all(color: Colors.black12)),
+                      //color: Color(0xff123adc),
+                      child: Center(
+                          child: Text(
+                        '--',
+                        style: TextStyle(
+                            color: Colors.black, fontWeight: FontWeight.bold),
+                      ))),
+                  Container(
+                      height: 40,
+                      width: 130,
+                      decoration: BoxDecoration(
+                          border: Border.all(color: Colors.black12)),
+                      //color: Color(0xff123adc),
+                      child: Center(
+                          child: Text(
+                        '--',
+                        style: TextStyle(
+                            color: Colors.black, fontWeight: FontWeight.bold),
+                      ))),
+                  Container(
+                      height: 40,
+                      width: 130,
+                      decoration: BoxDecoration(color: Color(0xffd2eec2)),
+                      //color: Color(0xff123adc),
+                      child: Center(
+                          child: Text(
+                        'SENG-1109-Mobile',
+                        style: TextStyle(
+                            color: Colors.black, fontWeight: FontWeight.bold),
+                      ))),
+                ],
+              ),
+
+              Row(
+                children: [
+                  Container(
+                      height: 40,
+                      width: 100,
+                      decoration: BoxDecoration(color:Color(0xff377a0b)),
+                      child: Text(
+                        '',
+                        style: TextStyle(
+                            color: Colors.white, fontWeight: FontWeight.bold),
+                      )),
+                  Container(
+                      height: 40,
+                      width: 130,
+                      decoration: BoxDecoration(
+                          border: Border.all(color: Colors.black12)),
+                      //color: Color(0xff123adc),
+                      child: Center(
+                          child: Text(
+                        '--',
+                        style: TextStyle(
+                            color: Colors.black, fontWeight: FontWeight.bold),
+                      ))),
+                  Container(
+                      height: 40,
+                      width: 130,
+                      decoration: BoxDecoration(
+                          border: Border.all(color: Colors.black12)),
+                      //color: Color(0xff123adc),
+                      child: Center(
+                          child: Text(
+                        '--',
+                        style: TextStyle(
+                            color: Colors.black, fontWeight: FontWeight.bold),
+                      ))),
+                  Container(
+                      height: 40,
+                      width: 130,
+                      decoration: BoxDecoration(
+                          border: Border.all(color: Colors.black12)),
+                      //color: Color(0xff123adc),
+                      child: Center(
+                          child: Text(
+                        '--',
+                        style: TextStyle(
+                            color: Colors.black, fontWeight: FontWeight.bold),
+                      ))),
+                  Container(
+                      height: 40,
+                      width: 130,
+                      decoration: BoxDecoration(
+                          border: Border.all(color: Colors.black12)),
+                      //color: Color(0xff123adc),
+                      child: Center(
+                          child: Text(
+                        '--',
+                        style: TextStyle(
+                            color: Colors.black, fontWeight: FontWeight.bold),
+                      ))),
+                  Container(
+                      height: 40,
+                      width: 130,
+                      decoration: BoxDecoration(
+                          border: Border.all(color: Colors.black12)),
+                      //color: Color(0xff123adc),
+                      child: Center(
+                          child: Text(
+                        '--',
+                        style: TextStyle(
+                            color: Colors.black, fontWeight: FontWeight.bold),
+                      ))),
+                  Container(
+                      height: 40,
+                      width: 130,
+                      decoration: BoxDecoration(
+                          border: Border.all(color: Colors.black12)),
+                      //color: Color(0xff123adc),
+                      child: Center(
+                          child: Text(
+                        '--',
+                        style: TextStyle(
+                            color: Colors.black, fontWeight: FontWeight.bold),
+                      ))),
+                  Container(
+                      height: 40,
+                      width: 130,
+                      decoration: BoxDecoration(color: Color(0xffd2eec2)),
+                      //color: Color(0xff123adc),
+                      child: Center(
+                          child: Text(
+                        'Application Dseign and',
+                        style: TextStyle(
+                            color: Colors.black, fontWeight: FontWeight.bold),
+                      ))),
+                ],
+              ),
+               SizedBox(height: 1,),
+              Row(
+                children: [
+                  Container(
+                      height: 40,
+                      width: 100,
+                      decoration: BoxDecoration(
+                        color: Color(0xff377a0b),
+                      ),
+                      //color: Color(0xff66ef0a),
+                      child: Center(
+                        child: Text(
+                          '08:00',
+                          style: TextStyle(
+                              color: Colors.white, fontWeight: FontWeight.bold),
+                        ),
+                      )),
+                  Container(
+                      height: 40,
+                      width: 130,
+                      decoration: BoxDecoration(
+                          border: Border.all(color: Colors.black12)),
+                      //color: Color(0xff123adc),
+                      child: Center(
+                          child: Text(
+                        '--',
+                        style: TextStyle(
+                            color: Colors.black, fontWeight: FontWeight.bold),
+                      ))),
+                  Container(
+                      height: 40,
+                      width: 130,
+                      decoration: BoxDecoration(
+                          border: Border.all(color: Colors.black12)),
+                      //color: Color(0xff123adc),
+                      child: Center(
+                          child: Text(
+                        '--',
+                        style: TextStyle(
+                            color: Colors.black, fontWeight: FontWeight.bold),
+                      ))),
+                  Container(
+                      height: 40,
+                      width: 130,
+                      decoration: BoxDecoration(
+                          border: Border.all(color: Colors.black12)),
+                      //color: Color(0xff123adc),
+                      child: Center(
+                          child: Text(
+                        '--',
+                        style: TextStyle(
+                            color: Colors.black, fontWeight: FontWeight.bold),
+                      ))),
+                  Container(
+                      height: 40,
+                      width: 130,
+                      decoration: BoxDecoration(
+                          border: Border.all(color: Colors.black12)),
+                      //color: Color(0xff123adc),
+                      child: Center(
+                          child: Text(
+                        '--',
+                        style: TextStyle(
+                            color: Colors.black, fontWeight: FontWeight.bold),
+                      ))),
+                  Container(
+                      height: 40,
+                      width: 130,
+                      decoration: BoxDecoration(
+                          border: Border.all(color: Colors.black12)),
+                      //color: Color(0xff123adc),
+                      child: Center(
+                          child: Text(
+                        '--',
+                        style: TextStyle(
+                            color: Colors.black, fontWeight: FontWeight.bold),
+                      ))),
+                  Container(
+                      height: 40,
+                      width: 130,
+                      decoration: BoxDecoration(
+                          border: Border.all(color: Colors.black12)),
+                      //color: Color(0xff123adc),
+                      child: Center(
+                          child: Text(
+                        '--',
+                        style: TextStyle(
+                            color: Colors.black, fontWeight: FontWeight.bold),
+                      ))),
+                  Container(
+                      height: 40,
+                      width: 130,
+                      decoration: BoxDecoration(color: Color(0xffd2eec2)),
+                      //color: Color(0xff123adc),
+                      child: Center(
+                          child: Text(
+                        'Development',
+                        style: TextStyle(
+                            color: Colors.black, fontWeight: FontWeight.bold),
+                      ))),
+                ],
+              ),
+
+              Row(
+                children: [
+                  Container(
+                      height: 40,
+                      width: 100,
+                      decoration: BoxDecoration(color:Color(0xff377a0b)),
+                      child: Text(
+                        '',
+                        style: TextStyle(
+                            color: Colors.white, fontWeight: FontWeight.bold),
+                      )),
+                  Container(
+                      height: 40,
+                      width: 130,
+                      decoration: BoxDecoration(
+                          border: Border.all(color: Colors.black12)),
+                      //color: Color(0xff123adc),
+                      child: Center(
+                          child: Text(
+                        '--',
+                        style: TextStyle(
+                            color: Colors.black, fontWeight: FontWeight.bold),
+                      ))),
+                  Container(
+                      height: 40,
+                      width: 130,
+                      decoration: BoxDecoration(
+                          border: Border.all(color: Colors.black12)),
+                      //color: Color(0xff123adc),
+                      child: Center(
+                          child: Text(
+                        '--',
+                        style: TextStyle(
+                            color: Colors.black, fontWeight: FontWeight.bold),
+                      ))),
+                  Container(
+                      height: 40,
+                      width: 130,
+                      decoration: BoxDecoration(
+                          border: Border.all(color: Colors.black12)),
+                      //color: Color(0xff123adc),
+                      child: Center(
+                          child: Text(
+                        '--',
+                        style: TextStyle(
+                            color: Colors.black, fontWeight: FontWeight.bold),
+                      ))),
+                  Container(
+                      height: 40,
+                      width: 130,
+                      decoration: BoxDecoration(
+                          border: Border.all(color: Colors.black12)),
+                      //color: Color(0xff123adc),
+                      child: Center(
+                          child: Text(
+                        '--',
+                        style: TextStyle(
+                            color: Colors.black, fontWeight: FontWeight.bold),
+                      ))),
+                  Container(
+                      height: 40,
+                      width: 130,
+                      decoration: BoxDecoration(
+                          border: Border.all(color: Colors.black12)),
+                      //color: Color(0xff123adc),
+                      child: Center(
+                          child: Text(
+                        '--',
+                        style: TextStyle(
+                            color: Colors.black, fontWeight: FontWeight.bold),
+                      ))),
+                  Container(
+                      height: 40,
+                      width: 130,
+                      decoration: BoxDecoration(
+                          border: Border.all(color: Colors.black12)),
+                      //color: Color(0xff123adc),
+                      child: Center(
+                          child: Text(
+                        '--',
+                        style: TextStyle(
+                            color: Colors.black, fontWeight: FontWeight.bold),
+                      ))),
+                  Container(
+                      height: 40,
+                      width: 130,
+                      decoration: BoxDecoration(
+                          border: Border.all(color: Colors.black12)),
+                      //color: Color(0xff123adc),
+                      child: Center(
+                          child: Text(
+                        '--',
+                        style: TextStyle(
+                            color: Colors.black, fontWeight: FontWeight.bold),
+                      ))),
+                ],
+              ),
+              SizedBox(
+                height: 1,
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}
