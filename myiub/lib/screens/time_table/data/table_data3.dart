@@ -14,7 +14,7 @@ List<TableDataThu> timetableThu = [
   TableDataThu(
       'Thursday', 'COSC-3101-Case Tools', 'Mr.Ali Haider', 'FENO.2.15-Class Room', '12:30-13:45'),
   TableDataThu(
-            'Thursday', 'COSC-3101-Mobile Application Design and Development', 'Dr.Nouman', 'FENO.2.15-Class Room', '12:30-13:45',
+            'Thursday', 'COSC-3102-Mobile Application Design and Development', 'Dr.Nouman', 'FENO.2.15-Class Room', '12:30-13:45',
             ),
   TableDataThu(
             'Thursday',  'COSC-3101-Case Tools', 'Mr.Ali Haider', 'FENO.2.15-Class Room', '12:30-13:45'),
