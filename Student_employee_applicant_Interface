@@ -1,0 +1,206 @@
+import 'package:flutter/material.dart';
+import 'package:my_app/applicant.dart';
+import 'package:my_app/login.dart';
+import 'package:my_app/register.dart';
+import 'package:my_app/student.dart';
+import 'package:my_app/employee.dart';
+
+// import 'package:flutter_neumorphic/flutter_neumorphic.dart';
+void main() {
+  runApp(const MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
+  
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      initialRoute: 'login',
+      routes: {
+        'login':(context) => const Login(),
+        'register' : (context) => const Register(),
+        'student' :(context) => const Student()
+      },
+    );
+  }
+}
+
+import 'package:flutter/material.dart';
+
+class Student extends StatelessWidget {
+  const Student({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Student Page',
+      theme: ThemeData(
+        
+        primarySwatch: Colors.purple,
+      ),
+      home: const StudentPage(title: 'Student'),
+    );
+  }
+}
+
+class StudentPage extends StatefulWidget {
+  const StudentPage({super.key, required this.title});
+
+  final String title;
+
+  @override
+  State<StudentPage> createState() => _StudentPageState();
+}
+
+class _StudentPageState extends State<StudentPage> {
+  
+  @override
+  Widget build(BuildContext context) {
+     
+    return Scaffold(
+      appBar: AppBar(
+        
+        title: Text(widget.title),
+      ),
+      body: Center(
+        
+        child: Column(
+           
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: <Widget>[
+            const Text(
+              'Student',
+              style: TextStyle(fontSize: 30),
+              
+            ),
+            TextButton(
+              onPressed: (() {
+                Navigator.pushNamed(context, 'login');
+              }), 
+              child: const Text(
+                "Log out",
+                style: TextStyle(
+                          fontSize: 15,
+                          color: Color(0xFF363f93),
+                          decoration: TextDecoration.underline),
+                      ),
+              )
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+import 'package:flutter/material.dart';
+
+class Employee extends StatelessWidget {
+  const Employee({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Employee Page',
+      theme: ThemeData(
+        
+        primarySwatch: Colors.purple,
+      ),
+      home: const EmployeePage(title: 'Employee'),
+    );
+  }
+}
+
+class EmployeePage extends StatefulWidget {
+  const EmployeePage({super.key, required this.title});
+
+  final String title;
+
+  @override
+  State<EmployeePage> createState() => _EmployeePageState();
+}
+
+class _EmployeePageState extends State<EmployeePage> {
+  
+  @override
+  Widget build(BuildContext context) {
+     
+    return Scaffold(
+      appBar: AppBar(
+        
+        title: Text(widget.title),
+      ),
+      body: Center(
+        
+        child: Column(
+           
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: const <Widget>[
+            Text(
+              'Employee',
+              style: TextStyle(fontSize: 30),
+              
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+import 'package:flutter/material.dart';
+
+class Applicant extends StatelessWidget {
+  const Applicant({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Applicant Page',
+      theme: ThemeData(
+        
+        primarySwatch: Colors.purple,
+      ),
+      home: const ApplicantPage(title: 'Applicant'),
+    );
+  }
+}
+
+class ApplicantPage extends StatefulWidget {
+  const ApplicantPage({super.key, required this.title});
+
+  final String title;
+
+  @override
+  State<ApplicantPage> createState() => _ApplicantPageState();
+}
+
+class _ApplicantPageState extends State<ApplicantPage> {
+  
+  @override
+  Widget build(BuildContext context) {
+     
+    return Scaffold(
+      appBar: AppBar(
+        
+        title: Text(widget.title),
+      ),
+      body: Center(
+        
+        child: Column(
+           
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: const <Widget>[
+            Text(
+              'Applicant',
+              style: TextStyle(fontSize: 30),
+              
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
